@@ -15,6 +15,8 @@ def profiles(request):
     }
     return render(request, 'browse.html', context)
 # Filmleri görüntüleme
+
+
 def movies(request, id):
     movies = Movie.objects.all()
     profil = Profiles.objects.filter(id = id)
