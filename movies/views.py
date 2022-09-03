@@ -52,7 +52,7 @@ def search(request):
     if request.GET.get('arama'):
         arama = request.GET.get('arama')
         movies = Movie.objects.filter(
-            Q(isim__exact = arama) | # Birebir aynısını yazmamız gerekir
+            Q(isim__icontains = arama) | # Birebir aynısını yazmamız gerekir
             Q(kategori__kategori_adi__icontains = arama) # Arayacağımız şeyin belli bir kısmını yazmamız yeterli olur
         )
     context = {

@@ -8,7 +8,7 @@ urlpatterns = [
     path('delete/', userDelete, name="delete"),
     path('logout/', userLogout, name="logout"),
     path('profilcreate/', profilCreate, name="profilcreate"),
-    path('acivate<uidb64>/<token>/', activate, name="activate"),
+    # path('acivate<uidb64>/<token>/', activate, name="activate"),
 ]
 
 # allauth

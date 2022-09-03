@@ -44,11 +44,11 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {% if profil %}
                   {% for i in profil %}
-                    <img src="{{i.resim.url}}" width="25" height="25" style="border-radius: 50%;" alt="">
+                    <img src="{{i.resim.url}}" width="25" height="25" style="border-radius: 50%; object-fit: cover;" alt="">
                     {% endfor %}
                   
                 {% else %}
-                   <img src="{{profile.image.url}}" width="25" height="25" style="border-radius: 50%;" alt="">
+                   <img src="{{profile.image.url}}" width="25" height="25" style="border-radius: 50%; object-fit: cover;" alt="">
                 {% endif %}
                 
                   
